@@ -1,15 +1,17 @@
-﻿Shader "Jimmy/BlendTest"
+﻿Shader "Jimmy/Trasparent"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "black" {}
+        _MainTex("Texture", 2D) = "black" {}
     }
     SubShader
     {
         Tags { "Queue" = "Transparent" }
-        Blend One One
+        Blend SrcAlpha OneMinusSrcAlpha
+        Cull Off
         Pass {
             SetTexture [_MainTex] { combine texture }
         }
     }
+    FallBack "Diffuse"
 }

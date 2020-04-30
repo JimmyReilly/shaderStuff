@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HelloShader
-  m_Shader: {fileID: 4800000, guid: 596b634179905394895f0b4ad34e5151, type: 3}
+  m_Name: Stencil Wall
+  m_Shader: {fileID: 4800000, guid: 9dacd147391defe4bb46c7f9abac70bf, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -55,22 +55,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _myBump:
-        m_Texture: {fileID: 2800000, guid: ad3ef26e26d47314b940e2ed1c0476dd, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _myCube:
-        m_Texture: {fileID: 8900000, guid: ce10c1b3e1254ac4da223e295612a402, type: 2}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _myDiffuse:
-        m_Texture: {fileID: 2800000, guid: 9f0fbaf80482bba4389d00a85c156c25, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _myTex:
-        m_Texture: {fileID: 2800000, guid: 162cf8a831c243b4f9e942e1aed3df06, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -81,26 +65,16 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _MySliderValue: 10
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RimPower: 1.44
+    - _SComp: 8
+    - _SOp: 2
+    - _SRef: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _myBright: 5.5
-    - _myFloat: 0.5
-    - _myRange: 2.09
-    - _mySlider: 5.68
     m_Colors:
-    - _AmbientColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.091, g: 0, b: 0.68275833, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0, g: 1, b: 1, a: 0}
-    - _myColor: {r: 0.5471698, g: 0.067105725, b: 0.085806265, a: 1}
-    - _myColour: {r: 0.8207547, g: 0.13937344, b: 0.1520065, a: 1}
-    - _myEmission: {r: 0.897485, g: 0.9056604, b: 0.38447848, a: 0.16078432}
-    - _myNormal: {r: 1, g: 1, b: 1, a: 1}
-    - _myVector: {r: 0.5, g: 1, b: 1, a: 1}

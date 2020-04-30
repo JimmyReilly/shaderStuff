@@ -28,7 +28,7 @@
                 o.Albedo = tex2D(_myDiffuse, IN.uv_myDiffuse).rgb;
                 o.Normal = UnpackNormal(tex2D(_myBump, IN.uv_myBump)) * _myBright;
                 o.Normal *= float3(_mySlider, _mySlider, 1);
-                o.Emission = texCUBE(_myCube, WorldReflectionVector(IN, o.Normal)).rgb;
+                //o.Emission = texCUBE(_myCube, WorldReflectionVector(IN, o.Normal)).rgb;
             }
         ENDCG
     }
